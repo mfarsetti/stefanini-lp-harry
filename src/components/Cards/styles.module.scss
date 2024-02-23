@@ -1,0 +1,23 @@
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+  .cardItem {
+    width: 150px;
+    img {
+      width: 150px;
+      height: 215px;
+      border-radius: 50%;
+    }
+    p {
+      font-family: "Harry";
+      font-size: 30px;
+      text-align: center;
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
