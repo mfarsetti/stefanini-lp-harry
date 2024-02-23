@@ -5,11 +5,57 @@
   gap: 35px;
   align-items: center;
   .cardItem {
-    width: 150px;
-    img {
+    width: 220px;
+    border: 2px solid;
+    padding: 60px 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    @media(max-width: 600px) {
+      width: 70%;
+    }
+    .date {
+      position: absolute;
+      bottom: -11px;
+      font-size: 20px;
+      right: 15px;
+    }
+    .imageCharacter {
+      margin-bottom: 20px;
+      .nameImage {
+        width: 150px;
+        height: 215px;
+        border-radius: 50%;
+        border: 1px solid;
+        font-size: 70px;
+      }
+    }
+    .alive {
+      background-color: #000;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 38px;
+      font-size: 16px;
+      position: absolute;
+      top: -38px;
+      right: 0;
+      width: 50%;
+      height: 35px;
+      border-radius: 0 10px 0 0;
+    }
+    .cardImage {
       width: 150px;
       height: 215px;
       border-radius: 50%;
+    }
+    .cardHouse {
+      width: 115px;
+      border-radius: 50%;
+      height: 110px;
     }
     p {
       font-family: "Harry";
@@ -18,6 +64,8 @@
       height: 60px;
       display: flex;
       align-items: center;
+      justify-content: center;
+      margin: 0;
     }
   }
 }
